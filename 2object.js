@@ -9,4 +9,16 @@ let parent = {
         console.log(this.Name + " " + this.Place + " " + this.Age);
     }
 }
+
 parent.showDetails();
+
+
+let child = {
+    Name : "Kolkata",
+    // Place : "WB",
+}
+child.__proto__  = parent ;
+child.showDetails();
+
+console.log(parent);
+console.log(child);
