@@ -1,0 +1,10 @@
+//Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays
+
+let array =[5,10,15,20];
+let arr = {
+    getName:function(){
+        let res = array.reduce((acc,cur)=>acc = acc + cur,0);
+        console.log(res);
+    }
+}
+arr.getName();
